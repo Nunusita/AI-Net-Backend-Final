@@ -1,0 +1,16 @@
+flask==3.0.3
+flask-cors==4.0.1
+flask-sqlalchemy==3.1.1
+flask-migrate==4.0.7
+flask-jwt-extended==4.6.0
+stripe==10.6.0
+moviepy==1.0.3
+openai==1.35.10
+whisper @ git+https://github.com/openai/whisper.git#egg=whisper
+python-dotenv==1.0.1
+sendgrid==6.11.0
+pydub==0.25.1
+werkzeug==3.0.2
+gunicorn==22.0.0
+psycopg2-binary==2.9.9
+sqlalchemy-utils==0.41.2
