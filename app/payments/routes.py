@@ -6,8 +6,9 @@ from ..models import User, Payment, PlanType, plan_expiry
 
 payments_bp = Blueprint("payments", __name__)
 
-@payments_bp.before_app_first_request
-def setup_stripe():
+@payments_bp.before_app_request
+def init_payments():
+    ...
     stripe.api_key = current_app.config["STRIPE_SECRET_KEY"]
 
 PRICES = {
